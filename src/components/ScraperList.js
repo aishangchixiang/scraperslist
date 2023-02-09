@@ -28,8 +28,8 @@ const ScraperList = () => {
                 getRowId={row => row.name}
                 columns={[
                     { field: 'name', headerName: 'Name', width: 300 },
-                    { field: 'gitHubUrl', headerName: 'GitHub URL', width: 600, renderCell:(row)=><a href={row.value} target="_blank">{row.value}</a> },
-                    { field: 'downloadUrl', headerName: 'Download URL', width: 600, renderCell:(row)=><a href={row.value} target="_blank">{row.value}</a> },
+                    { field: 'gitHubUrl', headerName: 'GitHub URL', width: 600, renderCell:(row)=><a href={row.value} target="_blank" rel="noreferrer">{row.value}</a> },
+                    { field: 'downloadUrl', headerName: 'Download URL', width: 600, renderCell:(row)=><a href={row.value} target="_blank" rel="noreferrer">{row.value}</a> },
                 ]}
                 rows={scrapers}
             />
